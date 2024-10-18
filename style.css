@@ -1,0 +1,230 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+/* Styling for the body */
+body {
+    background-color: antiquewhite; /* Light background color for the page */
+}
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation styling */
+nav {
+    font-family: "Ubuntu", sans-serif; /* Applying the Ubuntu font */
+}
+
+/* Brand styling inside navigation */
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder; /* Bold font weight */
+    font-size: 1.3rem; /* Larger font size */
+}
+
+/* Brand logo styling */
+.brand img {
+    width: 44px; /* Fixed width for the logo image */
+    border-radius: 50%; /* Circular shape */
+    padding: 0 8px; /* Padding for spacing */
+}
+
+/* Navigation list styling */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none; /* Removing default bullet points */
+    height: 65px; /* Fixed height for the navbar */
+    background-color: black; /* Background color for the navbar */
+    color: #fff; /* White text color */
+}
+
+/* Styling for list items in the navbar */
+nav ul li {
+    padding: 0 12px; /* Padding for spacing between items */
+}
+
+/* Main content container styling */
+.container {
+    min-height: 72vh; /* Minimum height */
+    background-color: black; /* Background color */
+    color: #fff; /* Text color */
+    font-family: 'Varela Round', sans-serif; /* Applying Varela Round font */
+    display: flex; /* Flexbox for layout */
+    width: 70%; /* Width percentage */
+    margin: 23px auto; /* Centering */
+    border-radius: 12px; /* Rounded corners */
+    padding: 34px; /* Padding inside the container */
+    background-image: url(https://img.freepik.com/premium-photo/black-music-notes-flowing-along-lines-song-melody-dark-background-copy-space-your-text-title-top-concept-music-aesthetic-rhythm-3d-illustration-rendering_34515-927.jpg); /* Background image */
+}
+
+/* Bottom section styling */
+.bottom {
+    position: sticky; /* Sticky positioning */
+    height: 100px; /* Fixed height */
+    background-color: black; /* Background color */
+    color: #fff; /* Text color */
+    bottom: 0; /* Sticks to the bottom */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Icon styling inside the bottom section */
+.icon {
+    margin-top: 14px; /* Margin for spacing */
+}
+
+/* Cursor pointer for clickable icons */
+.icon i {
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+/* Progress bar styling */
+#MyProgressBar {
+    width: 80vw; /* 80% of the viewport width */
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+/* Styling for the song items container */
+.SongItemContainer {
+    margin-top: 74px; /* Top margin for spacing */
+}
+
+/* Individual song item styling */
+.songItem {
+    height: 50px; /* Fixed height */
+    display: flex; /* Flexbox layout */
+    background-color: #fff; /* White background */
+    color: black; /* Black text color */
+    margin: 12px 0; /* Margin for spacing */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center content vertically */
+    border-radius: 34px; /* Rounded corners */
+}
+
+/* Song item image styling */
+.songItem img {
+    width: 43px; /* Fixed width */
+    margin: 0 23px; /* Margin for spacing */
+    border-radius: 34px; /* Circular shape */
+}
+
+/* Play button inside the song item */
+.songItemPlay {
+    cursor: pointer; /* Changes cursor on hover */
+    margin-left: 0; /* No left margin */
+    position: relative; /* Relative positioning */
+    left: -15px; /* Moves left */
+}
+
+/* Timestamp styling */
+.timestamp {
+    margin: 0 23px; /* Margin for spacing */
+}
+
+/* Cursor pointer for timestamp icons */
+.timestamp i {
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+/* Styling for the song information */
+.songinfo {
+    position: absolute; /* Absolute positioning */
+    left: 10vw; /* 10% from the left */
+    font-family: 'Varela Round', sans-serif; /* Applying font */
+}
+
+/* Styling for the image in the song information */
+.songinfo img {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.4s ease-in; /* Smooth transition effect */
+    position: relative; /* Relative positioning */
+    top: 7px; /* Moves down */
+}
+
+/* Styling for song name */
+.songName {
+    text-transform: capitalize; /* Capitalize text */
+}
+
+/* Responsive Styles */
+
+/* Large screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%; /* Increase container width */
+        margin: 20px auto; /* Adjust margin */
+    }
+    .songItem {
+        width: 80%; /* Adjust width */
+        margin: 10px; /* Adjust margin */
+    }
+    .songinfo {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+/* Medium screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .container {
+        width: 90%; /* Increase container width */
+        margin: 15px auto; /* Adjust margin */
+    }
+    .songItem {
+        width: 80%; /* Adjust width */
+        margin: 10px; /* Adjust margin */
+    }
+    .songinfo {
+        font-size: 12px; /* Smaller font size */
+    }
+}
+
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Increase container width */
+        margin: 10px auto; /* Adjust margin */
+    }
+    .songItem {
+        width: 80%; /* Adjust width */
+        margin: 10px; /* Adjust margin */
+    }
+    .songItem img {
+        width: 30px; /* Smaller image size */
+        height: 30px; /* Smaller image height */
+    }
+    .songinfo {
+        font-size: 10px; /* Smaller font size */
+    }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Full width */
+        margin: 5px auto; /* Adjust margin */
+    }
+    .songItem {
+        width: 90%; /* Adjust width */
+        margin: 5px; /* Adjust margin */
+    }
+    .songItem img {
+        width: 30px; /* Smaller image size */
+        height: 30px; /* Smaller image height */
+    }
+    .songinfo {
+        font-size: 8px; /* Smaller font size */
+    }
+}
+
+/* Song duration styling */
+.songDuration {
+    margin-right: 23px; /* Margin for spacing */
+}
